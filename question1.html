@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Google White Board Question 1</h1>
+    <h2>dailycodingproblem.com</h2>
+    <h3>April 10, 2019</h3>
+    <ol style="font-size: 25px">
+        <li>Given a list of numbers and a number k, return whether any two numbers from the list add up to k.<br>
+        For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.</li>
+    </ol>
+
+    <script>
+    function returnK() {
+            var array = [10, 15, 3, 7];
+            var k = 13
+            for (var i=0; i<=array.length; i++) {
+                for (var n=0; n<=array.length; n++) {
+                if (array[i] + array[i+n] === k) {
+                    console.log(array[i] + " + " + array[i+n] + " is " + k);
+                }
+            }
+            }
+            console.log(array[0]);
+        }
+    
+    window.onload = returnK();
+    </script>
+</body>
+</html>
