@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Google White Board Question 2</h1>
+    <h2>dailycodingproblem.com</h2>
+    <h3>April 17, 2019</h3>
+    <ol style="font-size: 25px">
+        <li>A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value.<br>
+            Given the root to a binary tree, count the number of unival subtrees.</li>
+    </ol>
+    <br><br>
+    <div style="text-align: center; font-size: 35px">Answer = <span id="answer"></span></div>
+
+    <script>
+    function countSub() {
+        var x = 0;
+        for (var h = 0; h<3; h++){
+            var unival = 2**(h+1)-1;
+            if (unival == unival) {
+                x = x+2;
+                var answer = x-1;
+            }
+        }
+        document.getElementById("answer").innerHTML = answer ;      
+    };
+
+    window.onload = countSub();
+    </script>
+</body>
+</html>
