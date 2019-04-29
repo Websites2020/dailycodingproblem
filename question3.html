@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Google White Board Question 3</h1>
+    <h2>dailycodingproblem.com</h2>
+    <h3>April 10, 2019</h3>
+    <ol style="font-size: 25px">
+        <li>Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.</li>
+    </ol>
+
+    <script>
+        var A = [3,7,8,10];
+        var B = [99,1,8,10];
+
+    function returnK() {
+        index1:
+        for (var i=0; i<=3; i++) {
+            index2:
+            for (var y=0; y <=3; y++) {
+                if (A[i] === B[y]) {
+                    console.log(A[i] + "=" + B[y]);
+                    break index1;
+                }
+                
+            }
+        }
+
+    };
+
+    window.onload = returnK();
+    </script>
+</body>
+</html>
